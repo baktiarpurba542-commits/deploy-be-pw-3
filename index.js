@@ -6,7 +6,7 @@ import pool from "./db.js";
 dotenv.config();
 
 const app = express();
-//const PORT = process.env.PORT || 5000;//
+// const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
@@ -140,11 +140,11 @@ app.delete("/api/todos/:id", async (req, res) => {
     });
   }
 });
-/*
-app.listen(PORT, () =>
-  console.log(
-    new Date().toLocaleTimeString() + `: Server is running on port ${PORT}`,
-  ),
-);
-*/
 
+// app.listen(PORT, () =>
+//   console.log(
+//     new Date().toLocaleTimeString() + `: Server is running on port ${PORT}`,
+//   ),
+// );
+
+export default app;
